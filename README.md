@@ -8,12 +8,16 @@
 
 ## Description
 
-**AftermathTools** description.
+**AftermathTools** is a set of development tools for
+[Aftermath](https://github.com/hyperoslo/Aftermath) framework.
 
 ## Usage
 
 ```swift
-<API>
+// Commands
+Engine.sharedInstance.pipeCommands(through: [LogCommandMiddleware(), ErrorCommandMiddleware()])
+// Events
+Engine.sharedInstance.pipeEvents(through: [LogEventMiddleware(), ErrorEventMiddleware()])
 ```
 
 ## Installation
