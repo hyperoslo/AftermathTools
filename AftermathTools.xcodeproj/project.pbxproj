@@ -19,6 +19,8 @@
 		D5157E001D821BAA005620BF /* EventMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157DFE1D821BAA005620BF /* EventMiddleware.swift */; };
 		D5157E021D8221B0005620BF /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157E011D8221B0005620BF /* Helpers.swift */; };
 		D5157E031D8221B0005620BF /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157E011D8221B0005620BF /* Helpers.swift */; };
+		D5157E051D822437005620BF /* EngineErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157E041D822437005620BF /* EngineErrorHandler.swift */; };
+		D5157E061D822437005620BF /* EngineErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157E041D822437005620BF /* EngineErrorHandler.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* AftermathTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* AftermathTools.framework */; };
 		D5C6294A1C3A7FAA007F7B7C /* AftermathTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* AftermathTools.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,7 @@
 		D5157DFA1D821A17005620BF /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		D5157DFE1D821BAA005620BF /* EventMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMiddleware.swift; sourceTree = "<group>"; };
 		D5157E011D8221B0005620BF /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		D5157E041D822437005620BF /* EngineErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineErrorHandler.swift; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* AftermathTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AftermathTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2E8A91C3A780C00C0327D /* AftermathTools-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AftermathTools-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C629401C3A7FAA007F7B7C /* AftermathTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AftermathTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +166,7 @@
 				D5157DDD1D8216E7005620BF /* CommandMiddleware.swift */,
 				D5157DFE1D821BAA005620BF /* EventMiddleware.swift */,
 				D5157E011D8221B0005620BF /* Helpers.swift */,
+				D5157E041D822437005620BF /* EngineErrorHandler.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -407,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5157DFF1D821BAA005620BF /* EventMiddleware.swift in Sources */,
+				D5157E051D822437005620BF /* EngineErrorHandler.swift in Sources */,
 				D5157E021D8221B0005620BF /* Helpers.swift in Sources */,
 				D5157DDE1D8216E7005620BF /* CommandMiddleware.swift in Sources */,
 			);
@@ -425,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5157E001D821BAA005620BF /* EventMiddleware.swift in Sources */,
+				D5157E061D822437005620BF /* EngineErrorHandler.swift in Sources */,
 				D5157E031D8221B0005620BF /* Helpers.swift in Sources */,
 				D5157DE41D82171D005620BF /* CommandMiddleware.swift in Sources */,
 			);
