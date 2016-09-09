@@ -1,3 +1,3 @@
 func log(text: String) {
-  print("🔮 Aftermath -> \(text)")
+  print("🔮 AFTERMATH -> \(text)")
 }
