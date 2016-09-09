@@ -2,21 +2,21 @@ import Aftermath
 
 // MARK: - Log Command Middleware
 
-struct LogCommandMiddleware: CommandMiddleware {
+public struct LogCommandMiddleware: CommandMiddleware {
 
-  typealias Handler = (AnyCommand -> Void)
+  public typealias Handler = (AnyCommand -> Void)
 
-  var handler: Handler = { command in
+  public var handler: Handler = { command in
     log("Command executed: \(command)")
   }
 
-  init(handler: Handler? = nil) {
+  public init(handler: Handler? = nil) {
     if let handler = handler {
       self.handler = handler
     }
   }
 
-  func intercept(command: AnyCommand, execute: Execute, next: Execute) throws {
+  public func intercept(command: AnyCommand, execute: Execute, next: Execute) throws {
     handler(command)
     try next(command)
   }
@@ -24,21 +24,21 @@ struct LogCommandMiddleware: CommandMiddleware {
 
 // MARK: - Error Command Middleware
 
-struct ErrorCommandMiddleware: CommandMiddleware {
+public struct ErrorCommandMiddleware: CommandMiddleware {
 
-  typealias Handler = (AnyCommand, ErrorType) -> Void
+  public typealias Handler = (AnyCommand, ErrorType) -> Void
 
-  var handler: Handler = { command in
+  public var handler: Handler = { command in
     log("Command failed with error: \(command)")
   }
 
-  init(handler: Handler? = nil) {
+  public init(handler: Handler? = nil) {
     if let handler = handler {
       self.handler = handler
     }
   }
 
-  func intercept(command: AnyCommand, execute: Execute, next: Execute) throws {
+  public func intercept(command: AnyCommand, execute: Execute, next: Execute) throws {
     do {
       try next(command)
     } catch {

@@ -2,21 +2,21 @@ import Aftermath
 
 // MARK: - Log Event Middleware
 
-struct LogEventMiddleware: EventMiddleware {
+public struct LogEventMiddleware: EventMiddleware {
 
-  typealias Handler = AnyEvent -> Void
+  public typealias Handler = AnyEvent -> Void
 
-  var handler: Handler = { event in
+  public var handler: Handler = { event in
     log("Event published: \(event)")
   }
 
-  init(handler: Handler? = nil) {
+  public init(handler: Handler? = nil) {
     if let handler = handler {
       self.handler = handler
     }
   }
 
-  func intercept(event: AnyEvent, publish: Publish, next: Publish) throws {
+  public func intercept(event: AnyEvent, publish: Publish, next: Publish) throws {
     handler(event)
     try next(event)
   }
@@ -24,21 +24,21 @@ struct LogEventMiddleware: EventMiddleware {
 
 // MARK: - Error Event Middleware
 
-struct ErrorEventMiddleware: EventMiddleware {
+public struct ErrorEventMiddleware: EventMiddleware {
 
-  typealias Handler = (AnyEvent, ErrorType) -> Void
+  public typealias Handler = (AnyEvent, ErrorType) -> Void
 
-  var handler: Handler = { event in
+  public var handler: Handler = { event in
     log("Event failed with error: \(event)")
   }
 
-  init(handler: Handler? = nil) {
+  public init(handler: Handler? = nil) {
     if let handler = handler {
       self.handler = handler
     }
   }
 
-  func intercept(event: AnyEvent, publish: Publish, next: Publish) throws {
+  public func intercept(event: AnyEvent, publish: Publish, next: Publish) throws {
     do {
       try next(event)
     } catch {
