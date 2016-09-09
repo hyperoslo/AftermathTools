@@ -7,7 +7,7 @@ public struct LogCommandMiddleware: CommandMiddleware {
   public typealias Handler = (AnyCommand -> Void)
 
   public var handler: Handler = { command in
-    log("Command executed: \(command)")
+    log("Command executed -> \(command)")
   }
 
   public init(handler: Handler? = nil) {
@@ -29,7 +29,7 @@ public struct ErrorCommandMiddleware: CommandMiddleware {
   public typealias Handler = (AnyCommand, ErrorType) -> Void
 
   public var handler: Handler = { command in
-    log("Command failed with error: \(command)")
+    log("Command failed with error -> \(command)")
   }
 
   public init(handler: Handler? = nil) {

@@ -1,3 +1,3 @@
 func log(text: String) {
-  print("🔮 AFTERMATH -> \(text)")
+  print("🔮 AFTERMATH: \(text)")
 }

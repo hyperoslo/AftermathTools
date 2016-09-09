@@ -7,7 +7,7 @@ public struct LogEventMiddleware: EventMiddleware {
   public typealias Handler = AnyEvent -> Void
 
   public var handler: Handler = { event in
-    log("Event published: \(event)")
+    log("Event published -> \(event)")
   }
 
   public init(handler: Handler? = nil) {
@@ -29,7 +29,7 @@ public struct ErrorEventMiddleware: EventMiddleware {
   public typealias Handler = (AnyEvent, ErrorType) -> Void
 
   public var handler: Handler = { event in
-    log("Event failed with error: \(event)")
+    log("Event failed with error -> \(event)")
   }
 
   public init(handler: Handler? = nil) {
