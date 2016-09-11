@@ -7,20 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D5157DDE1D8216E7005620BF /* CommandMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157DDD1D8216E7005620BF /* CommandMiddleware.swift */; };
-		D5157DE41D82171D005620BF /* CommandMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157DDD1D8216E7005620BF /* CommandMiddleware.swift */; };
 		D5157DE91D821989005620BF /* Aftermath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5157DE81D821989005620BF /* Aftermath.framework */; };
 		D5157DEB1D821997005620BF /* Aftermath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5157DEA1D821997005620BF /* Aftermath.framework */; };
 		D5157DEC1D8219A8005620BF /* Aftermath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5157DE81D821989005620BF /* Aftermath.framework */; };
 		D5157DED1D8219B3005620BF /* Aftermath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5157DEA1D821997005620BF /* Aftermath.framework */; };
 		D5157DFC1D821A2A005620BF /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157DFA1D821A17005620BF /* Tests.swift */; };
 		D5157DFD1D821A2B005620BF /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157DFA1D821A17005620BF /* Tests.swift */; };
-		D5157DFF1D821BAA005620BF /* EventMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157DFE1D821BAA005620BF /* EventMiddleware.swift */; };
-		D5157E001D821BAA005620BF /* EventMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157DFE1D821BAA005620BF /* EventMiddleware.swift */; };
 		D5157E021D8221B0005620BF /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157E011D8221B0005620BF /* Helpers.swift */; };
 		D5157E031D8221B0005620BF /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157E011D8221B0005620BF /* Helpers.swift */; };
 		D5157E051D822437005620BF /* EngineErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157E041D822437005620BF /* EngineErrorHandler.swift */; };
 		D5157E061D822437005620BF /* EngineErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157E041D822437005620BF /* EngineErrorHandler.swift */; };
+		D57A57291D85ACF100F78661 /* LogCommandMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A57281D85ACF100F78661 /* LogCommandMiddleware.swift */; };
+		D57A572A1D85ACF100F78661 /* LogCommandMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A57281D85ACF100F78661 /* LogCommandMiddleware.swift */; };
+		D57A572C1D85AD1A00F78661 /* ErrorCommandMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A572B1D85AD1A00F78661 /* ErrorCommandMiddleware.swift */; };
+		D57A572D1D85AD1A00F78661 /* ErrorCommandMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A572B1D85AD1A00F78661 /* ErrorCommandMiddleware.swift */; };
+		D57A572F1D85AD3200F78661 /* AbortCommandMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A572E1D85AD3200F78661 /* AbortCommandMiddleware.swift */; };
+		D57A57301D85AD3200F78661 /* AbortCommandMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A572E1D85AD3200F78661 /* AbortCommandMiddleware.swift */; };
+		D57A57321D85AD4E00F78661 /* SilenceCommandMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A57311D85AD4E00F78661 /* SilenceCommandMiddleware.swift */; };
+		D57A57331D85AD4E00F78661 /* SilenceCommandMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A57311D85AD4E00F78661 /* SilenceCommandMiddleware.swift */; };
+		D57A57351D85AD8500F78661 /* LogEventMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A57341D85AD8500F78661 /* LogEventMiddleware.swift */; };
+		D57A57361D85AD8500F78661 /* LogEventMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A57341D85AD8500F78661 /* LogEventMiddleware.swift */; };
+		D57A57381D85ADD400F78661 /* ErrorEventMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A57371D85ADD400F78661 /* ErrorEventMiddleware.swift */; };
+		D57A57391D85ADD400F78661 /* ErrorEventMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A57371D85ADD400F78661 /* ErrorEventMiddleware.swift */; };
+		D57A573B1D85ADDC00F78661 /* AbortEventMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A573A1D85ADDC00F78661 /* AbortEventMiddleware.swift */; };
+		D57A573C1D85ADDC00F78661 /* AbortEventMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A573A1D85ADDC00F78661 /* AbortEventMiddleware.swift */; };
+		D57A573E1D85ADE500F78661 /* SilenceEventMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A573D1D85ADE500F78661 /* SilenceEventMiddleware.swift */; };
+		D57A573F1D85ADE500F78661 /* SilenceEventMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A573D1D85ADE500F78661 /* SilenceEventMiddleware.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* AftermathTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* AftermathTools.framework */; };
 		D5C6294A1C3A7FAA007F7B7C /* AftermathTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* AftermathTools.framework */; };
 /* End PBXBuildFile section */
@@ -45,7 +57,6 @@
 /* Begin PBXFileReference section */
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-Mac.playground"; sourceTree = "<group>"; };
-		D5157DDD1D8216E7005620BF /* CommandMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandMiddleware.swift; sourceTree = "<group>"; };
 		D5157DE81D821989005620BF /* Aftermath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Aftermath.framework; path = Carthage/Build/iOS/Aftermath.framework; sourceTree = "<group>"; };
 		D5157DEA1D821997005620BF /* Aftermath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Aftermath.framework; path = Carthage/Build/Mac/Aftermath.framework; sourceTree = "<group>"; };
 		D5157DF01D8219D6005620BF /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
@@ -53,9 +64,16 @@
 		D5157DF21D8219D6005620BF /* Info-Tests-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Tests-iOS.plist"; sourceTree = "<group>"; };
 		D5157DF31D8219D6005620BF /* Info-Tests-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Tests-Mac.plist"; sourceTree = "<group>"; };
 		D5157DFA1D821A17005620BF /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		D5157DFE1D821BAA005620BF /* EventMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMiddleware.swift; sourceTree = "<group>"; };
 		D5157E011D8221B0005620BF /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		D5157E041D822437005620BF /* EngineErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineErrorHandler.swift; sourceTree = "<group>"; };
+		D57A57281D85ACF100F78661 /* LogCommandMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogCommandMiddleware.swift; sourceTree = "<group>"; };
+		D57A572B1D85AD1A00F78661 /* ErrorCommandMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCommandMiddleware.swift; sourceTree = "<group>"; };
+		D57A572E1D85AD3200F78661 /* AbortCommandMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbortCommandMiddleware.swift; sourceTree = "<group>"; };
+		D57A57311D85AD4E00F78661 /* SilenceCommandMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilenceCommandMiddleware.swift; sourceTree = "<group>"; };
+		D57A57341D85AD8500F78661 /* LogEventMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogEventMiddleware.swift; sourceTree = "<group>"; };
+		D57A57371D85ADD400F78661 /* ErrorEventMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorEventMiddleware.swift; sourceTree = "<group>"; };
+		D57A573A1D85ADDC00F78661 /* AbortEventMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbortEventMiddleware.swift; sourceTree = "<group>"; };
+		D57A573D1D85ADE500F78661 /* SilenceEventMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilenceEventMiddleware.swift; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* AftermathTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AftermathTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2E8A91C3A780C00C0327D /* AftermathTools-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AftermathTools-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C629401C3A7FAA007F7B7C /* AftermathTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AftermathTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +154,28 @@
 			path = AftermathTools;
 			sourceTree = "<group>";
 		};
+		D57A57261D85ACD700F78661 /* CommandMiddleware */ = {
+			isa = PBXGroup;
+			children = (
+				D57A57281D85ACF100F78661 /* LogCommandMiddleware.swift */,
+				D57A572B1D85AD1A00F78661 /* ErrorCommandMiddleware.swift */,
+				D57A572E1D85AD3200F78661 /* AbortCommandMiddleware.swift */,
+				D57A57311D85AD4E00F78661 /* SilenceCommandMiddleware.swift */,
+			);
+			path = CommandMiddleware;
+			sourceTree = "<group>";
+		};
+		D57A57271D85ACE400F78661 /* EventMiddleware */ = {
+			isa = PBXGroup;
+			children = (
+				D57A57341D85AD8500F78661 /* LogEventMiddleware.swift */,
+				D57A57371D85ADD400F78661 /* ErrorEventMiddleware.swift */,
+				D57A573A1D85ADDC00F78661 /* AbortEventMiddleware.swift */,
+				D57A573D1D85ADE500F78661 /* SilenceEventMiddleware.swift */,
+			);
+			path = EventMiddleware;
+			sourceTree = "<group>";
+		};
 		D5B2E8951C3A780C00C0327D = {
 			isa = PBXGroup;
 			children = (
@@ -163,8 +203,8 @@
 		D5C629691C3A809D007F7B7C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D5157DDD1D8216E7005620BF /* CommandMiddleware.swift */,
-				D5157DFE1D821BAA005620BF /* EventMiddleware.swift */,
+				D57A57271D85ACE400F78661 /* EventMiddleware */,
+				D57A57261D85ACD700F78661 /* CommandMiddleware */,
 				D5157E011D8221B0005620BF /* Helpers.swift */,
 				D5157E041D822437005620BF /* EngineErrorHandler.swift */,
 			);
@@ -410,10 +450,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5157DFF1D821BAA005620BF /* EventMiddleware.swift in Sources */,
+				D57A572C1D85AD1A00F78661 /* ErrorCommandMiddleware.swift in Sources */,
+				D57A573E1D85ADE500F78661 /* SilenceEventMiddleware.swift in Sources */,
+				D57A573B1D85ADDC00F78661 /* AbortEventMiddleware.swift in Sources */,
+				D57A57321D85AD4E00F78661 /* SilenceCommandMiddleware.swift in Sources */,
 				D5157E051D822437005620BF /* EngineErrorHandler.swift in Sources */,
+				D57A572F1D85AD3200F78661 /* AbortCommandMiddleware.swift in Sources */,
+				D57A57381D85ADD400F78661 /* ErrorEventMiddleware.swift in Sources */,
+				D57A57351D85AD8500F78661 /* LogEventMiddleware.swift in Sources */,
 				D5157E021D8221B0005620BF /* Helpers.swift in Sources */,
-				D5157DDE1D8216E7005620BF /* CommandMiddleware.swift in Sources */,
+				D57A57291D85ACF100F78661 /* LogCommandMiddleware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,10 +475,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5157E001D821BAA005620BF /* EventMiddleware.swift in Sources */,
+				D57A572D1D85AD1A00F78661 /* ErrorCommandMiddleware.swift in Sources */,
+				D57A573F1D85ADE500F78661 /* SilenceEventMiddleware.swift in Sources */,
+				D57A573C1D85ADDC00F78661 /* AbortEventMiddleware.swift in Sources */,
+				D57A57331D85AD4E00F78661 /* SilenceCommandMiddleware.swift in Sources */,
 				D5157E061D822437005620BF /* EngineErrorHandler.swift in Sources */,
+				D57A57301D85AD3200F78661 /* AbortCommandMiddleware.swift in Sources */,
+				D57A57391D85ADD400F78661 /* ErrorEventMiddleware.swift in Sources */,
+				D57A57361D85AD8500F78661 /* LogEventMiddleware.swift in Sources */,
 				D5157E031D8221B0005620BF /* Helpers.swift in Sources */,
-				D5157DE41D82171D005620BF /* CommandMiddleware.swift in Sources */,
+				D57A572A1D85ACF100F78661 /* LogCommandMiddleware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
