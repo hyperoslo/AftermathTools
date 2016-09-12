@@ -37,6 +37,8 @@
 		D57A57421D85AE7400F78661 /* FailCommandMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A57401D85AE7400F78661 /* FailCommandMiddleware.swift */; };
 		D57A57441D85B05000F78661 /* FailEventMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A57431D85B05000F78661 /* FailEventMiddleware.swift */; };
 		D57A57451D85B05000F78661 /* FailEventMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A57431D85B05000F78661 /* FailEventMiddleware.swift */; };
+		D57A574A1D85B13D00F78661 /* AsyncCommandMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A57491D85B13D00F78661 /* AsyncCommandMiddleware.swift */; };
+		D57A574B1D85B13D00F78661 /* AsyncCommandMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A57491D85B13D00F78661 /* AsyncCommandMiddleware.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* AftermathTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* AftermathTools.framework */; };
 		D5C6294A1C3A7FAA007F7B7C /* AftermathTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* AftermathTools.framework */; };
 /* End PBXBuildFile section */
@@ -80,6 +82,7 @@
 		D57A573D1D85ADE500F78661 /* SilenceEventMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilenceEventMiddleware.swift; sourceTree = "<group>"; };
 		D57A57401D85AE7400F78661 /* FailCommandMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailCommandMiddleware.swift; sourceTree = "<group>"; };
 		D57A57431D85B05000F78661 /* FailEventMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailEventMiddleware.swift; sourceTree = "<group>"; };
+		D57A57491D85B13D00F78661 /* AsyncCommandMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncCommandMiddleware.swift; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* AftermathTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AftermathTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2E8A91C3A780C00C0327D /* AftermathTools-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AftermathTools-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C629401C3A7FAA007F7B7C /* AftermathTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AftermathTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +171,7 @@
 				D57A572E1D85AD3200F78661 /* AbortCommandMiddleware.swift */,
 				D57A57311D85AD4E00F78661 /* SilenceCommandMiddleware.swift */,
 				D57A57401D85AE7400F78661 /* FailCommandMiddleware.swift */,
+				D57A57491D85B13D00F78661 /* AsyncCommandMiddleware.swift */,
 			);
 			path = CommandMiddleware;
 			sourceTree = "<group>";
@@ -468,6 +472,7 @@
 				D57A572F1D85AD3200F78661 /* AbortCommandMiddleware.swift in Sources */,
 				D57A57381D85ADD400F78661 /* ErrorEventMiddleware.swift in Sources */,
 				D57A57351D85AD8500F78661 /* LogEventMiddleware.swift in Sources */,
+				D57A574A1D85B13D00F78661 /* AsyncCommandMiddleware.swift in Sources */,
 				D5157E021D8221B0005620BF /* Helpers.swift in Sources */,
 				D57A57291D85ACF100F78661 /* LogCommandMiddleware.swift in Sources */,
 			);
@@ -495,6 +500,7 @@
 				D57A57301D85AD3200F78661 /* AbortCommandMiddleware.swift in Sources */,
 				D57A57391D85ADD400F78661 /* ErrorEventMiddleware.swift in Sources */,
 				D57A57361D85AD8500F78661 /* LogEventMiddleware.swift in Sources */,
+				D57A574B1D85B13D00F78661 /* AsyncCommandMiddleware.swift in Sources */,
 				D5157E031D8221B0005620BF /* Helpers.swift in Sources */,
 				D57A572A1D85ACF100F78661 /* LogCommandMiddleware.swift in Sources */,
 			);
