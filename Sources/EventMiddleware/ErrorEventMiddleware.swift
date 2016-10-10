@@ -2,7 +2,7 @@ import Aftermath
 
 public struct ErrorEventMiddleware: EventMiddleware {
 
-  public typealias Handler = (AnyEvent, ErrorType) -> Void
+  public typealias Handler = (AnyEvent, Error) -> Void
 
   public var handler: Handler = { event in
     log("Event failed with error -> \(event)")
@@ -14,11 +14,11 @@ public struct ErrorEventMiddleware: EventMiddleware {
     }
   }
 
-  public func intercept(event: AnyEvent, publish: Publish, next: Publish) throws {
+  public func intercept(_ event: AnyEvent, publish: Publish, next: Publish) throws {
     do {
       try next(event)
     } catch {
-      handler(event, error)
+      handler(event, error as! Error)
       throw error
     }
   }

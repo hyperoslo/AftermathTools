@@ -1,6 +1,6 @@
 // MARK: - Errors
 
-public struct Error: ErrorType, CustomStringConvertible, CustomDebugStringConvertible {
+public struct Error: Error, CustomStringConvertible, CustomDebugStringConvertible {
 
   public let description: String
 
@@ -15,6 +15,6 @@ public struct Error: ErrorType, CustomStringConvertible, CustomDebugStringConver
 
 // MARK: - Functions
 
-func log(text: String) {
+func log(_ text: String) {
   print("🔮 AFTERMATH: \(text)")
 }

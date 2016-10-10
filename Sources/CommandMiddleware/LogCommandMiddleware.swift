@@ -2,7 +2,7 @@ import Aftermath
 
 public struct LogCommandMiddleware: CommandMiddleware {
 
-  public typealias Handler = (AnyCommand -> Void)
+  public typealias Handler = ((AnyCommand) -> Void)
 
   public var handler: Handler = { command in
     log("Command executed -> \(command)")
@@ -14,7 +14,7 @@ public struct LogCommandMiddleware: CommandMiddleware {
     }
   }
 
-  public func intercept(command: AnyCommand, execute: Execute, next: Execute) throws {
+  public func intercept(_ command: AnyCommand, execute: Execute, next: Execute) throws {
     handler(command)
     try next(command)
   }

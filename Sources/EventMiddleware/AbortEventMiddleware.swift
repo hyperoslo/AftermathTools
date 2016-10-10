@@ -8,8 +8,8 @@ public struct AbortEventMiddleware: EventMiddleware {
     self.events = events
   }
 
-  public func intercept(event: AnyEvent, publish: Publish, next: Publish) throws {
-    guard events.filter({ event.dynamicType == $0 }).count == 0 else {
+  public func intercept(_ event: AnyEvent, publish: Publish, next: Publish) throws {
+    guard events.filter({ type(of: event) == $0 }).count == 0 else {
       log("Event has been aborted -> \(event)")
       return
     }

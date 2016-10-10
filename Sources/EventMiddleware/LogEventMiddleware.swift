@@ -2,7 +2,7 @@ import Aftermath
 
 public struct LogEventMiddleware: EventMiddleware {
 
-  public typealias Handler = AnyEvent -> Void
+  public typealias Handler = (AnyEvent) -> Void
 
   public var handler: Handler = { event in
     log("Event published -> \(event)")
@@ -14,7 +14,7 @@ public struct LogEventMiddleware: EventMiddleware {
     }
   }
 
-  public func intercept(event: AnyEvent, publish: Publish, next: Publish) throws {
+  public func intercept(_ event: AnyEvent, publish: Publish, next: Publish) throws {
     handler(event)
     try next(event)
   }
