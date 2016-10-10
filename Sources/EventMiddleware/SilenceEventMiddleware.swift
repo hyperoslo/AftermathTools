@@ -8,7 +8,7 @@ public struct SilenceEventMiddleware: EventMiddleware {
     self.error = error
   }
 
-  public func intercept(_ event: AnyEvent, publish: Publish, next: Publish) throws {
+  public func intercept(event: AnyEvent, publish: Publish, next: Publish) throws {
     log("Silence mode: event has been blocked -> \(event)")
 
     if let error = error {

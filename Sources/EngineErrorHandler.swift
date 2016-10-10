@@ -4,8 +4,8 @@ public struct EngineErrorHandler: ErrorHandler {
 
   public init() {}
 
-  public func handleError(_ error: Error) {
-    if let error = error as? Error {
+  public func handle(error: Error) {
+    if let error = error as? Failure {
       log("Engine error -> \(error)")
     } else if let warning = error as? Warning {
       log("Engine warning -> \(warning)")

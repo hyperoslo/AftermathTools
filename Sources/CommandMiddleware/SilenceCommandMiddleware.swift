@@ -8,7 +8,7 @@ public struct SilenceCommandMiddleware: CommandMiddleware {
     self.error = error
   }
 
-  public func intercept(_ command: AnyCommand, execute: Execute, next: Execute) throws {
+  public func intercept(command: AnyCommand, execute: Execute, next: Execute) throws {
     log("Silence mode: event has been blocked -> \(command)")
 
     if let error = error {

@@ -14,11 +14,11 @@ public struct ErrorCommandMiddleware: CommandMiddleware {
     }
   }
 
-  public func intercept(_ command: AnyCommand, execute: Execute, next: Execute) throws {
+  public func intercept(command: AnyCommand, execute: Execute, next: Execute) throws {
     do {
       try next(command)
     } catch {
-      handler(command, error as! Error)
+      handler(command, error)
       throw error
     }
   }

@@ -10,7 +10,7 @@ public struct FailCommandMiddleware: CommandMiddleware {
     self.failures = failures
   }
 
-  public func intercept(_ command: AnyCommand, execute: Execute, next: Execute) throws {
+  public func intercept(command: AnyCommand, execute: Execute, next: Execute) throws {
     guard let failure = failures.filter({ type(of: command) == $0.command }).first else {
       try next(command)
       return

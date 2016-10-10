@@ -10,7 +10,7 @@ public struct FailEventMiddleware: EventMiddleware {
     self.failures = failures
   }
 
-  public func intercept(_ event: AnyEvent, publish: Publish, next: Publish) throws {
+  public func intercept(event: AnyEvent, publish: Publish, next: Publish) throws {
     guard let failure = failures.filter({ type(of: event) == $0.event }).first else {
       try next(event)
       return

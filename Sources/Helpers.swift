@@ -1,6 +1,6 @@
 // MARK: - Errors
 
-public struct Error: Error, CustomStringConvertible, CustomDebugStringConvertible {
+public struct Failure: Error, CustomStringConvertible, CustomDebugStringConvertible {
 
   public let description: String
 

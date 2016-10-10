@@ -8,7 +8,7 @@ public struct AbortCommandMiddleware: CommandMiddleware {
     self.commands = commands
   }
 
-  public func intercept(_ command: AnyCommand, execute: Execute, next: Execute) throws {
+  public func intercept(command: AnyCommand, execute: Execute, next: Execute) throws {
     guard commands.filter({ type(of: command) == $0 }).count == 0 else {
       log("Command has been aborted -> \(command)")
       return

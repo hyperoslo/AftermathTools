@@ -14,7 +14,7 @@ public struct LogCommandMiddleware: CommandMiddleware {
     }
   }
 
-  public func intercept(_ command: AnyCommand, execute: Execute, next: Execute) throws {
+  public func intercept(command: AnyCommand, execute: Execute, next: Execute) throws {
     handler(command)
     try next(command)
   }

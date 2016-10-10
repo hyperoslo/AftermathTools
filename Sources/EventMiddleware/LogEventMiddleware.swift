@@ -14,7 +14,7 @@ public struct LogEventMiddleware: EventMiddleware {
     }
   }
 
-  public func intercept(_ event: AnyEvent, publish: Publish, next: Publish) throws {
+  public func intercept(event: AnyEvent, publish: Publish, next: Publish) throws {
     handler(event)
     try next(event)
   }
