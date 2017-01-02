@@ -2,9 +2,9 @@ import Aftermath
 
 public struct SilenceCommandMiddleware: CommandMiddleware {
 
-  var error: ErrorType?
+  var error: Error?
 
-  public init(error: ErrorType? = nil) {
+  public init(error: Error? = nil) {
     self.error = error
   }
 

@@ -2,7 +2,7 @@ import Aftermath
 
 public struct FailEventMiddleware: EventMiddleware {
 
-  public typealias Failure = (event: AnyEvent.Type, error: ErrorType)
+  public typealias Failure = (event: AnyEvent.Type, error: Error)
 
   let failures: [Failure]
 
@@ -11,7 +11,7 @@ public struct FailEventMiddleware: EventMiddleware {
   }
 
   public func intercept(event: AnyEvent, publish: Publish, next: Publish) throws {
-    guard let failure = failures.filter({ event.dynamicType == $0.event }).first else {
+    guard let failure = failures.filter({ type(of: event) == $0.event }).first else {
       try next(event)
       return
     }

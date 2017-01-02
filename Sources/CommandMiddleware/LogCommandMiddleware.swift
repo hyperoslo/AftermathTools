@@ -2,7 +2,7 @@ import Aftermath
 
 public struct LogCommandMiddleware: CommandMiddleware {
 
-  public typealias Handler = (AnyCommand -> Void)
+  public typealias Handler = ((AnyCommand) -> Void)
 
   public var handler: Handler = { command in
     log("Command executed -> \(command)")

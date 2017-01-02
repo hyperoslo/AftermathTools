@@ -2,7 +2,7 @@ import Aftermath
 
 public struct ErrorCommandMiddleware: CommandMiddleware {
 
-  public typealias Handler = (AnyCommand, ErrorType) -> Void
+  public typealias Handler = (AnyCommand, Error) -> Void
 
   public var handler: Handler = { command in
     log("Command failed with error -> \(command)")

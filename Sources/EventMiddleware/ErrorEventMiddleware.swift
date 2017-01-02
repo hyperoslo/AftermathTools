@@ -2,7 +2,7 @@ import Aftermath
 
 public struct ErrorEventMiddleware: EventMiddleware {
 
-  public typealias Handler = (AnyEvent, ErrorType) -> Void
+  public typealias Handler = (AnyEvent, Error) -> Void
 
   public var handler: Handler = { event in
     log("Event failed with error -> \(event)")

@@ -1,20 +1,25 @@
-// MARK: - Errors
-
-public struct Error: ErrorType, CustomStringConvertible, CustomDebugStringConvertible {
-
-  public let description: String
-
-  public init(description: String) {
-    self.description = description
-  }
-
-  public var debugDescription: String {
-    return description
-  }
-}
-
 // MARK: - Functions
 
-func log(text: String) {
-  print("🔮 AFTERMATH: \(text)")
+enum LogType {
+  case normal
+  case warning
+  case error
+  case unknown
+}
+
+func log(_ text: String, type: LogType = .normal) {
+  var emoticon: String = ""
+
+  switch type {
+  case .warning:
+    emoticon = "⚠️ "
+  case .error:
+    emoticon = "⛔️ "
+  case .unknown:
+    emoticon = "🤔 "
+  default:
+    break
+  }
+
+  print("🔮 AFTERMATH: \(emoticon)\(text)")
 }

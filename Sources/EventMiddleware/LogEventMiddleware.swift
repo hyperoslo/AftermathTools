@@ -2,7 +2,7 @@ import Aftermath
 
 public struct LogEventMiddleware: EventMiddleware {
 
-  public typealias Handler = AnyEvent -> Void
+  public typealias Handler = (AnyEvent) -> Void
 
   public var handler: Handler = { event in
     log("Event published -> \(event)")
